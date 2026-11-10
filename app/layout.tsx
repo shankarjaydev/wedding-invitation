@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://wedding-invitation-eight-nu-66.vercel.app"
+  ),
   title: "Sai Kiran Mohan & Sri Anusha Wedding",
   description:
     "Join us for Sai Kiran Mohan and Sri Anusha's wedding celebration on Sunday, 22nd November 2026 at Madhura Banquet Hall, KPHB, Hyderabad.",
@@ -12,16 +15,19 @@ export const metadata: Metadata = {
       "We cordially invite you to celebrate the wedding of Sai Kiran Mohan & Sri Anusha on Sunday, 22nd November 2026 at Madhura Banquet Hall, KPHB, Hyderabad.",
     images: [
       {
-        url: "/invite.jpg",
+        url: "/og-invite.jpg",
         width: 1200,
-        height: 630,
+        height: 800,
         alt: "Sai Kiran Mohan & Sri Anusha Wedding Invitation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/invite.jpg"],
+    title: "Sai Kiran Mohan & Sri Anusha Wedding",
+    description:
+      "We cordially invite you to celebrate the wedding of Sai Kiran Mohan & Sri Anusha on Sunday, 22nd November 2026 at Madhura Banquet Hall, KPHB, Hyderabad.",
+    images: ["/og-invite.jpg"],
   },
   icons: {
     icon: "/favicon.svg",
