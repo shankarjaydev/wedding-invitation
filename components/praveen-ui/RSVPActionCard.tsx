@@ -55,56 +55,60 @@ export const RSVPActionCard: React.FC = () => {
   return (
     <SectionCard className="text-center lg:col-span-2">
       {/* Icon */}
-      <Sparkles className="mx-auto mb-3 text-[#8b682e]" size={22} />
+      <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#d4af37] bg-[radial-gradient(circle_at_35%_35%,#fffdf9_0%,#f5e8c4_100%)] text-[#b8860b] shadow-[0_8px_20px_rgba(109,21,37,.1)]">
+        <Sparkles size={20} />
+      </div>
 
       {/* Heading */}
       <h2
-        className="text-center text-[24px] font-semibold uppercase leading-tight tracking-[0.08em] text-[#3f2219] sm:text-[28px] md:text-[32px] font-cinzel"
+        className="text-center text-[25px] font-bold uppercase leading-tight tracking-[0.08em] text-[#5c1322] sm:text-[29px] md:text-[33px] font-cinzel"
         style={{ fontFamily: "'Cinzel', serif" }}
       >
         Grace Us With Your Presence
       </h2>
 
       {/* Divider */}
-      <GoldDivider className="mt-5" />
+      <GoldDivider className="mt-4" />
 
       {/* Text */}
-      <p className="mx-auto mt-4 max-w-xl text-[16px] font-medium leading-8 text-[#573728] sm:text-[18px]">
+      <p className="mx-auto mt-4 max-w-xl text-[16px] font-medium leading-8 text-[#4a101b] sm:text-[18px]">
         Your gracious presence and heartfelt blessings will make our special day complete and will be cherished for a lifetime.
       </p>
 
       {/* Confirm on WhatsApp Button */}
-      <motion.a
-        href={WHATSAPP_CONFIRM_URL}
-        target="_blank"
-        rel="noreferrer"
-        whileTap={{ scale: 0.96 }}
-        whileHover={{ scale: 1.03 }}
-        className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-[#c7a158] bg-[#291410] px-7 py-3 text-[12px] font-semibold uppercase tracking-[0.16em] text-[#fff8e6] shadow-[0_15px_34px_rgba(41,20,16,.24),inset_0_1px_0_rgba(255,255,255,.16)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#3a1c16] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#c7a158]/55 cursor-pointer"
-        aria-label="Confirm attendance on WhatsApp"
-      >
-        <MessageCircle size={18} />
-        <span>Confirm on WhatsApp</span>
-      </motion.a>
+      <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <motion.a
+          href={WHATSAPP_CONFIRM_URL}
+          target="_blank"
+          rel="noreferrer"
+          whileTap={{ scale: 0.96 }}
+          whileHover={{ scale: 1.03 }}
+          className="inline-flex min-h-12 items-center justify-center gap-2.5 rounded-full border-2 border-[#d4af37] bg-[linear-gradient(180deg,#681d2c_0%,#3d0f19_100%)] px-8 py-3.5 text-[12px] font-bold uppercase tracking-[0.18em] text-[#ffebad] shadow-[0_14px_32px_rgba(77,20,30,.28),inset_0_1px_0_rgba(255,215,0,.4)] transition-all duration-300 hover:bg-[#521321] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ffd700]/60 cursor-pointer"
+          aria-label="Confirm attendance on WhatsApp"
+        >
+          <MessageCircle size={18} />
+          <span>Confirm on WhatsApp</span>
+        </motion.a>
 
-      {/* Share Invitation Button & Status */}
-      <div className="mt-4">
-        <button
+        {/* Share Invitation Button */}
+        <motion.button
           type="button"
           onClick={handleShare}
-          className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-[#c9aa63]/60 bg-[#fff9ed]/80 px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#4b2f21] shadow-[0_10px_22px_rgba(71,43,17,.10),inset_0_1px_0_rgba(255,255,255,.72)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#a57e37] hover:bg-[#fff5df] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#b68a3a]/45 cursor-pointer"
+          whileTap={{ scale: 0.96 }}
+          whileHover={{ scale: 1.03 }}
+          className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border-2 border-[#d4af37] bg-[linear-gradient(180deg,#fffdf9_0%,#f5e9ce_100%)] px-6 py-3 text-[11px] font-bold uppercase tracking-[0.16em] text-[#5c1322] shadow-[0_10px_24px_rgba(109,21,37,.12),inset_0_1px_0_rgba(255,255,255,.9)] transition-all duration-300 hover:bg-[#fff9ea] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37]/60 cursor-pointer"
           aria-label="Share wedding invitation"
         >
-          <Share2 size={15} />
+          <Share2 size={16} />
           <span>Share Invitation</span>
-        </button>
-
-        {shareFeedback && (
-          <p className="mt-2 text-[12px] font-medium text-[#573728]/70">
-            {shareFeedback}
-          </p>
-        )}
+        </motion.button>
       </div>
+
+      {shareFeedback && (
+        <p className="mt-3 text-[13px] font-semibold text-[#8b0000]">
+          {shareFeedback}
+        </p>
+      )}
     </SectionCard>
   );
 };

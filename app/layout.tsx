@@ -15,9 +15,9 @@ export const metadata: Metadata = {
       "We cordially invite you to celebrate the wedding of Sai Kiran Mohan & Sri Anusha on Sunday, 22nd November 2026 at Madhura Banquet Hall, KPHB, Hyderabad.",
     images: [
       {
-        url: "/invite.jpg?v=4",
-        width: 682,
-        height: 1024,
+        url: "/invite.png?v=5",
+        width: 1200,
+        height: 800,
         alt: "Sai Kiran Mohan & Sri Anusha Wedding Invitation",
       },
     ],
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Sai Kiran Mohan & Sri Anusha Wedding",
     description:
       "We cordially invite you to celebrate the wedding of Sai Kiran Mohan & Sri Anusha on Sunday, 22nd November 2026 at Madhura Banquet Hall, KPHB, Hyderabad.",
-    images: ["/invite.jpg?v=4"],
+    images: ["/invite.png?v=5"],
   },
   icons: {
     icon: "/favicon.svg",

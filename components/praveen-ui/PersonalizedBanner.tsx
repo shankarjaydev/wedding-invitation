@@ -28,24 +28,24 @@ export const PersonalizedBanner: React.FC = () => {
 
   return (
     <div className="lg:col-span-2">
-      <SectionCard className="text-center bg-[linear-gradient(180deg,#fffaf0_0%,#f5e8cc_100%)] border-2 border-[#c4a15b]">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3f2219] text-[#fff8e6] text-[10px] font-semibold tracking-widest uppercase mb-3 font-cinzel">
-          <Sparkles size={12} className="text-[#c4a15b]" />
+      <SectionCard className="text-center">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37] bg-[linear-gradient(90deg,#681d2c_0%,#3d0f19_100%)] text-[#ffebad] text-[11px] font-bold tracking-widest uppercase mb-4 shadow-[0_4px_14px_rgba(104,29,44,.2)] font-cinzel">
+          <Sparkles size={13} className="text-[#ffd700]" />
           <span>{relation ? `${relation} • Personal Invitation` : "Personal Invitation"}</span>
-          <Sparkles size={12} className="text-[#c4a15b]" />
+          <Sparkles size={13} className="text-[#ffd700]" />
         </div>
 
         <h2
-          className="text-[26px] sm:text-[32px] font-bold text-[#3f2219] uppercase tracking-wide font-cinzel"
+          className="text-[28px] sm:text-[34px] font-bold text-[#5c1322] uppercase tracking-wide font-cinzel"
           style={{ fontFamily: "'Cinzel', serif" }}
         >
-          Dearest <span className="underline decoration-[#c4a15b] decoration-2">{guestName}</span>
+          Dearest <span className="underline decoration-[#d4af37] decoration-2 underline-offset-4">{guestName}</span>
         </h2>
 
         <GoldDivider className="my-4" />
 
-        <p className="mx-auto max-w-xl text-[15px] sm:text-[17px] font-medium leading-relaxed text-[#573728]">
-          With the divine blessings of our families, we warmly invite you and your family to celebrate the wedding ceremony of <strong>Sai Kiran Mohan &amp; Sri Anusha</strong>.
+        <p className="mx-auto max-w-xl text-[16px] sm:text-[18px] font-medium leading-relaxed text-[#4a101b]">
+          With the divine blessings of our families, we warmly invite you and your family to grace and celebrate the wedding ceremony of <strong>Sai Kiran Mohan &amp; Sri Anusha</strong>.
         </p>
       </SectionCard>
     </div>

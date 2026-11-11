@@ -3,41 +3,49 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const LANTERNS = [
-  { left: "7%", top: "6%", size: 42, delay: 0 },
-  { left: "72%", top: "5%", size: 50, delay: 0.5 },
-  { left: "18%", top: "25%", size: 34, delay: 1.1 },
-  { left: "83%", top: "28%", size: 38, delay: 0.7 },
-  { left: "45%", top: "12%", size: 30, delay: 1.4 },
+const DEEPAMS = [
+  { left: "6%", top: "7%", size: 36, delay: 0 },
+  { left: "76%", top: "6%", size: 44, delay: 0.6 },
+  { left: "15%", top: "26%", size: 28, delay: 1.2 },
+  { left: "84%", top: "24%", size: 34, delay: 0.8 },
+  { left: "48%", top: "11%", size: 26, delay: 1.5 },
+  { left: "26%", top: "35%", size: 22, delay: 2.1 },
+  { left: "70%", top: "34%", size: 24, delay: 1.8 },
 ];
 
 export const FloatingLanterns: React.FC = () => {
   return (
     <div className="pointer-events-none absolute inset-0 z-20 overflow-hidden" aria-hidden="true">
-      {LANTERNS.map((lantern, idx) => (
+      {DEEPAMS.map((item, idx) => (
         <motion.div
-          key={`lantern-${idx}`}
-          className="absolute rounded-[48%] bg-[radial-gradient(circle_at_52%_54%,#fff5b8_0%,#ffe3a7_23%,#eaa0c7_57%,#d992bd_78%,rgba(217,146,189,.18)_100%)] opacity-80 shadow-[0_0_18px_rgba(255,220,164,.58),0_0_34px_rgba(223,147,192,.34)] blur-[0.2px]"
+          key={`deepam-${idx}`}
+          className="absolute flex items-center justify-center"
           style={{
-            left: lantern.left,
-            top: lantern.top,
-            width: lantern.size,
-            height: lantern.size * 1.25,
+            left: item.left,
+            top: item.top,
+            width: item.size,
+            height: item.size * 1.35,
           }}
           animate={{
-            y: [0, -16, 0],
-            rotate: [-3, 4, -3],
-            opacity: [0.65, 0.88, 0.65],
+            y: [0, -20, 0],
+            x: [0, idx % 2 === 0 ? 8 : -8, 0],
+            rotate: [-4, 4, -4],
+            opacity: [0.75, 0.98, 0.75],
           }}
           transition={{
-            duration: 5.5,
-            delay: lantern.delay,
+            duration: 6 + (idx % 3),
+            delay: item.delay,
             repeat: Infinity,
             ease: "easeInOut",
           }}
-        />
+        >
+          {/* Outer Golden Aura Glow */}
+          <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_50%_45%,rgba(255,235,160,0.85)_0%,rgba(255,180,40,0.55)_40%,rgba(212,120,20,0.2)_70%,transparent_100%)] blur-[2px] shadow-[0_0_24px_rgba(255,215,0,0.7)]" />
+
+          {/* Inner Sacred Flame Core */}
+          <div className="relative h-2/3 w-1/2 rounded-[50%_50%_35%_35%] bg-[radial-gradient(circle_at_50%_30%,#ffffff_0%,#fff2a8_45%,#f59e0b_85%)] shadow-[0_0_12px_#ffedd5]" />
+        </motion.div>
       ))}
     </div>
   );
 };
-

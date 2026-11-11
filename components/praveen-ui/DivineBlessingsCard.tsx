@@ -31,17 +31,6 @@ export const DivineBlessingsCard: React.FC<DivineBlessingsProps> = ({
         {/* Divider */}
         <GoldDivider className="mt-5" />
 
-        {/* Couple Portrait in Ornate Mandap Arch */}
-        <div className="mx-auto my-5 max-w-[260px] sm:max-w-[290px] overflow-hidden rounded-t-[140px] rounded-b-2xl border-2 border-[#d4af37]/70 p-1.5 shadow-[0_12px_28px_rgba(77,43,21,0.18)] bg-[#fffdf7]">
-          <img
-            src="/couple.jpg"
-            alt="Sai Kiran Mohan & Sri Anusha"
-            className="h-auto w-full rounded-t-[134px] rounded-b-xl object-cover shadow-inner"
-            width={682}
-            height={1024}
-          />
-        </div>
-
         {/* Description */}
         <p className="mx-auto mt-4 max-w-xl text-[16px] font-medium leading-8 text-[#573728] sm:text-[18px]">
           {blessingText}

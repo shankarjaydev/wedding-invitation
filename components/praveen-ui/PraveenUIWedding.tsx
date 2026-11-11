@@ -15,16 +15,16 @@ import { PersonalizedBanner } from "./PersonalizedBanner";
 
 export const PraveenUIWedding: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#e8dfca] text-[#3f2219]">
-      <main className="royal-bg relative min-h-screen w-full overflow-hidden pb-10 shadow-[0_0_90px_rgba(43,28,19,.16)]">
-        {/* Mango Leaves Swaying on Left & Right Borders */}
+    <div className="min-h-screen bg-[#f7f1e4] text-[#38121a]">
+      <main className="royal-bg relative min-h-screen w-full overflow-hidden pb-12 shadow-[0_0_90px_rgba(56,18,26,.18)]">
+        {/* Mango Leaves Swaying with Marigolds and Brass Bells */}
         <MangoBorder side="left" />
         <MangoBorder side="right" />
 
-        {/* Floating Rose & Marigold Petals */}
+        {/* Floating Rose, Marigold & Akshatha Petals */}
         <FallingPetals />
 
-        {/* Hero Section with South Indian Temple Gopuram Parallax */}
+        {/* Hero Section with Twilight Celestial Sky & Golden Temple Gopuram */}
         <Hero
           brideName="Sri Anusha"
           groomName="Sai Kiran Mohan"
@@ -32,11 +32,11 @@ export const PraveenUIWedding: React.FC = () => {
           blessingWord="శుభమస్తు"
         />
 
-        {/* Monogram Separator (S & S) */}
+        {/* Royal Burgundy & Gold Monogram Seal (S & S) */}
         <MonogramDivider monogram="S & S" />
 
         {/* Main 2-Column Responsive Card Grid */}
-        <div className="relative z-30 mx-auto grid w-full max-w-6xl grid-cols-1 gap-5 px-4 py-7 sm:px-6 md:gap-6 lg:grid-cols-2 lg:px-10">
+        <div className="relative z-30 mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 px-4 py-8 sm:px-6 md:gap-7 lg:grid-cols-2 lg:px-10">
           {/* Dynamic Personalized Guest Greeting if URL has ?guest=... */}
           <Suspense fallback={null}>
             <PersonalizedBanner />
@@ -48,11 +48,11 @@ export const PraveenUIWedding: React.FC = () => {
           {/* Card 2: Divine Blessings */}
           <DivineBlessingsCard />
 
-          {/* Card 3: Wedding Events */}
+          {/* Card 3: Auspicious Wedding Events */}
           <EventsCard />
 
-          {/* Card 4: Countdown to 11:17 AM on 22nd Nov */}
-          <CountdownCard />
+          {/* Card 4: Countdown to 11:17 AM on 22nd Nov (commented out as requested) */}
+          {/* <CountdownCard /> */}
 
           {/* Card 5: Venue & Map (Madhura Banquet Hall, KPHB) */}
           <VenueCard />
@@ -62,8 +62,13 @@ export const PraveenUIWedding: React.FC = () => {
         </div>
 
         {/* Footer Credit */}
-        <div className="relative z-30 px-8 pb-8 text-center text-[12px] uppercase tracking-[0.18em] text-[#6b4a2e]/70 font-cinzel">
-          With Love, Sai Kiran &amp; Sri Anusha❤️
+        <div className="relative z-30 px-8 pt-4 pb-10 text-center">
+          <p className="text-[12px] uppercase tracking-[0.24em] text-[#966f22] font-cinzel font-bold">
+            With Love &amp; Warm Regards
+          </p>
+          <p className="mt-1 text-[20px] text-[#5c1322] font-cursive" style={{ fontFamily: "'Great Vibes', cursive" }}>
+            Sai Kiran Mohan &amp; Sri Anusha
+          </p>
         </div>
       </main>
     </div>

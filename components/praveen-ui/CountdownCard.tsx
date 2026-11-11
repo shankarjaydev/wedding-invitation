@@ -1,6 +1,10 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
+
+// CountdownCard commented out as requested. Uncomment whenever needed.
+/*
+import { useState, useEffect } from "react";
 import { SectionCard } from "./SectionCard";
 import { motion } from "framer-motion";
 
@@ -37,10 +41,7 @@ export const CountdownCard: React.FC = () => {
 
   return (
     <SectionCard className="overflow-hidden bg-[linear-gradient(180deg,#fffaf0_0%,#f3e8cc_100%)] px-6 py-8 text-center sm:px-8 sm:py-9 lg:col-span-2">
-      {/* Background Radial Light */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(214,181,101,.16),transparent_42%)]" />
-
-      {/* Top Gold Dividing Line */}
       <div className="absolute left-8 right-8 top-7 h-[1px] bg-gradient-to-r from-transparent via-[#c4a15b]/70 to-transparent" />
 
       <div className="relative z-10">
@@ -65,32 +66,27 @@ export const CountdownCard: React.FC = () => {
               Counting down to the sacred hour of 11:17 AM when two souls unite as one.
             </p>
 
-            {/* 4 Animated Countdown Boxes */}
             <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-3">
-              {units.map((unit, idx) => (
+              {units.map((unit) => (
                 <motion.div
                   key={unit.label}
                   animate={{ y: [0, -3, 0] }}
                   transition={{
                     duration: 2.5,
                     repeat: Infinity,
-                    delay: idx * 0.15,
                     ease: "easeInOut",
                   }}
-                  className="relative min-h-[86px] overflow-hidden rounded-[12px] border border-[#d8ba6b]/50 bg-[linear-gradient(180deg,#fffbf3_0%,#f3e8cc_100%)] px-1 py-4 shadow-[0_10px_22px_rgba(61,34,22,.09),inset_0_1px_0_rgba(255,255,255,.7)] sm:min-h-[96px] sm:px-2 sm:py-5"
+                  className="rounded-[14px] border border-[#d8ba6b]/60 bg-[#fffdfa] p-3 shadow-[0_10px_22px_rgba(61,34,22,.08),inset_0_1px_0_rgba(255,255,255,.9)] sm:p-4"
                 >
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(196,161,91,.11),transparent_60%)]" />
-                  <div className="relative z-10">
-                    <div
-                      className="text-[24px] font-semibold tracking-wide text-[#7d5529] sm:text-3xl font-cinzel"
-                      style={{ fontFamily: "'Cinzel', serif" }}
-                    >
-                      {unit.value}
-                    </div>
-                    <div className="mt-2 text-[9px] uppercase tracking-[0.18em] text-[#573728]/70 sm:text-[10px] sm:tracking-[0.24em]">
-                      {unit.label}
-                    </div>
-                  </div>
+                  <span
+                    className="block text-[30px] font-semibold leading-none tracking-tight text-[#3f2219] sm:text-[38px] font-cinzel"
+                    style={{ fontFamily: "'Cinzel', serif" }}
+                  >
+                    {unit.value}
+                  </span>
+                  <span className="mt-2 block text-[11px] font-medium uppercase tracking-[0.24em] text-[#8c692d] font-cinzel">
+                    {unit.label}
+                  </span>
                 </motion.div>
               ))}
             </div>
@@ -99,4 +95,9 @@ export const CountdownCard: React.FC = () => {
       </div>
     </SectionCard>
   );
+};
+*/
+
+export const CountdownCard: React.FC = () => {
+  return null;
 };

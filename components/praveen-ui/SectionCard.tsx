@@ -11,25 +11,24 @@ export const SectionCard: React.FC<{
     <motion.section
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.75, ease: "easeOut" }}
-      className={`relative z-30 h-full overflow-hidden rounded-[18px] border border-[#d1ad5e]/45 bg-[linear-gradient(180deg,rgba(255,252,244,.95)_0%,rgba(247,238,214,.95)_100%)] p-5 shadow-[0_18px_45px_rgba(58,32,24,.11),inset_0_1px_0_rgba(255,255,255,.78)] backdrop-blur-md sm:p-6 md:p-8 ${className}`}
+      className={`relative z-30 h-full overflow-hidden rounded-[22px] border-2 border-[#d4af37]/65 bg-[linear-gradient(180deg,rgba(255,254,250,.98)_0%,rgba(253,248,238,.97)_50%,rgba(250,242,226,.98)_100%)] p-6 shadow-[0_22px_55px_rgba(56,18,26,.12),0_4px_16px_rgba(212,175,55,.14),inset_0_1px_1px_rgba(255,255,255,.95)] backdrop-blur-md sm:p-7 md:p-9 ${className}`}
     >
-      {/* Inset Border Frame */}
-      <div className="pointer-events-none absolute inset-[7px] rounded-[13px] border border-[#7d4d2d]/10" />
+      {/* Inner Delicate Gold Filigree Border */}
+      <div className="pointer-events-none absolute inset-[9px] rounded-[16px] border border-[#d4af37]/35" />
 
-      {/* Top Gold Gradient Line */}
-      <div className="pointer-events-none absolute inset-x-8 top-0 h-[1px] bg-gradient-to-r from-transparent via-[#d8ba6b]/70 to-transparent" />
+      {/* Top Gold Foil Shimmer Line */}
+      <div className="pointer-events-none absolute inset-x-8 top-0 h-[2px] bg-gradient-to-r from-transparent via-[#ffd700] to-transparent shadow-[0_0_8px_rgba(255,215,0,.7)]" />
 
-      {/* 4 Ornate Gold Corner Brackets */}
-      <div className="pointer-events-none absolute left-4 top-4 h-5 w-5 border-l border-t border-[#c4a15b]/38" />
-      <div className="pointer-events-none absolute right-4 top-4 h-5 w-5 border-r border-t border-[#c4a15b]/38" />
-      <div className="pointer-events-none absolute bottom-4 left-4 h-5 w-5 border-b border-l border-[#c4a15b]/28" />
-      <div className="pointer-events-none absolute bottom-4 right-4 h-5 w-5 border-b border-r border-[#c4a15b]/28" />
+      {/* 4 Ornate Traditional Gold Corner Brackets */}
+      <div className="pointer-events-none absolute left-3.5 top-3.5 h-6 w-6 border-l-2 border-t-2 border-[#c59b27] rounded-tl-sm" />
+      <div className="pointer-events-none absolute right-3.5 top-3.5 h-6 w-6 border-r-2 border-t-2 border-[#c59b27] rounded-tr-sm" />
+      <div className="pointer-events-none absolute bottom-3.5 left-3.5 h-6 w-6 border-b-2 border-l-2 border-[#c59b27] rounded-bl-sm" />
+      <div className="pointer-events-none absolute bottom-3.5 right-3.5 h-6 w-6 border-b-2 border-r-2 border-[#c59b27] rounded-br-sm" />
 
       {/* Content */}
       <div className="relative z-10">{children}</div>
     </motion.section>
   );
 };
-
