@@ -15,7 +15,7 @@ const EVENTS = [
     Icon: Sparkles,
   },
   {
-    title: "Kalyana Virundhu / Lunch",
+    title: "Kalyana Vindhu/ Lunch",
     date: "Sunday, 22nd November 2026",
     time: "12:30 PM onwards",
     description: "Traditional South Indian Festive Wedding Feast",

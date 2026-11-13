@@ -12,7 +12,7 @@ A multi-device compatible, interactive South Indian Vedic wedding invitation web
    - **Scene 3 (Couple Announcement & Garlands)**: Vibrant magenta festive silk backdrop with fresh green mango leaves (*Mavilai Toran*) and yellow & orange marigold (*Sevvanthi*) flower garlands, displaying the groom's parents (*Smt. Janani & Shri Vijay*) and bride's parents (*Smt. Shalini & Shri Ajith Kumar*).
    - **Scene 4 (Couple Illustration & Invitation)**: 3D animated South Indian bride and groom with wedding garlands (*Malar Maalai*), jasmine flowers (*Mallipoo*), and the formal *"We Request your gracious presence on the Auspicious occasion of our marriage"*.
    - **Scene 5 (Save The Date & Events)**: Classic vintage wedding car illustration, live countdown timer to the Subamuhurtham, Subamuhurtham card, and Grand Reception card with calendar integration (.ics download & Google Calendar).
-   - **Scene 6 (Traditional South Indian Feast)**: Golden crispy Masala Dosa on a fresh banana leaf plate with steel bowls of Sambar, Coconut Chutney, and Tomato Chutney, plus a full 24-dish traditional Kalyana Virundhu menu.
+   - **Scene 6 (Traditional South Indian Feast)**: Golden crispy Masala Dosa on a fresh banana leaf plate with steel bowls of Sambar, Coconut Chutney, and Tomato Chutney, plus a full 24-dish traditional Kalyana Vindhumenu.
    - **Scene 7 (Where Our Story Begins)**: Golden sunburst mandala and interactive story cards tracing the journey from Mylapore filter coffee to the sacred betrothal (*Nichayathartham*).
 
 2. **Personalized Guest Invitation Engine**:
@@ -60,7 +60,7 @@ A multi-device compatible, interactive South Indian Vedic wedding invitation web
 │   ├── CoupleIntro.tsx        # Scene 3: Parents names, WEDS seal, Mango toran & marigolds
 │   ├── CoupleIllustration.tsx # Scene 4: 3D animated couple with floral garlands
 │   ├── SaveTheDateEvents.tsx  # Scene 5: Vintage car, live countdown & Muhurtham cards
-│   ├── TraditionalFeast.tsx   # Scene 6: Banana leaf plate, Dosa & Kalyana Virundhu menu
+│   ├── TraditionalFeast.tsx   # Scene 6: Banana leaf plate, Dosa & Kalyana Vindhumenu
 │   ├── LoveStory.tsx          # Scene 7: Where our story begins timeline
 │   ├── VenueMap.tsx           # Pollachi venue details & transit guide
 │   ├── RSVPModal.tsx          # Interactive RSVP form

@@ -19,7 +19,7 @@ export const TraditionalFeast: React.FC = () => {
         <div className="text-center mb-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/40 backdrop-blur-sm border border-amber-800/20 text-xs font-serif tracking-widest uppercase mb-3 text-amber-950">
             <Utensils className="w-3.5 h-3.5 text-vedic-crimson" />
-            <span>Kalyana Virundhu • Traditional Hospitality</span>
+            <span>Kalyana Vindhu• Traditional Hospitality</span>
           </div>
 
           <h2 className="font-samarkan font-serif text-3xl sm:text-5xl font-bold tracking-wide text-vedic-maroon uppercase drop-shadow-sm">
@@ -43,11 +43,10 @@ export const TraditionalFeast: React.FC = () => {
               <button
                 key={idx}
                 onClick={() => setActiveTab(idx)}
-                className={`flex-1 py-2 sm:py-2.5 px-4 rounded-full text-xs sm:text-sm font-cinzel font-bold tracking-wider uppercase transition-all ${
-                  activeTab === idx
-                    ? "bg-vedic-maroon text-amber-200 shadow-md"
-                    : "text-amber-950 hover:bg-white/30"
-                }`}
+                className={`flex-1 py-2 sm:py-2.5 px-4 rounded-full text-xs sm:text-sm font-cinzel font-bold tracking-wider uppercase transition-all ${activeTab === idx
+                  ? "bg-vedic-maroon text-amber-200 shadow-md"
+                  : "text-amber-950 hover:bg-white/30"
+                  }`}
               >
                 {idx === 0 ? "Morning Virundhu" : "Royal Kalyana Sappadu"}
               </button>

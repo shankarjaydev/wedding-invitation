@@ -22,7 +22,7 @@ const CALENDAR_EVENTS: CalendarEvent[] = [
     description: "Auspicious wedding ceremony of Sai Kiran Mohan & Sri Anusha at Madhura Banquet Hall, KPHB, Hyderabad.",
   },
   {
-    title: "Sai Kiran & Sri Anusha Kalyana Virundhu & Reception",
+    title: "Sai Kiran & Sri Anusha Kalyana Vindhu& Reception",
     type: "lunch",
     start: "20261122T123000",
     end: "20261122T153000",
@@ -76,7 +76,7 @@ export const WeddingCelebrationCard: React.FC = () => {
       {/* Lunch / Feast Time */}
       <p className="mt-3 flex items-center justify-center gap-2 text-[15px] sm:text-[16px] font-medium text-[#4a101b]">
         <UtensilsCrossed size={16} className="text-[#b8860b]" />
-        <span>Kalyana Virundhu / Grand Wedding Feast from 12:30 PM onwards</span>
+        <span>Kalyana Vindhu/ Grand Wedding Feast from 12:30 PM onwards</span>
       </p>
 
       {/* Venue */}

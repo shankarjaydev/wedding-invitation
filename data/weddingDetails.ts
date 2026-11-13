@@ -34,7 +34,7 @@ export const WEDDING_DATA: WeddingDetails = {
     },
     {
       id: "lunch",
-      name: "Kalyana Virundhu / Lunch",
+      name: "Kalyana Vindhu/ Lunch",
       tamilName: "విందు భోజనం",
       date: "2026-11-22T12:30:00",
       displayDate: "Sunday, 22nd November 2026",
